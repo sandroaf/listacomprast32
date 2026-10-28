@@ -6,6 +6,7 @@ if (isset($_POST["fnome"])) {
     $stmt->execute($par);
     redirecionar("index.php","Lista Incluída com sucesso");
 } else {
+    require_once("funcoes.php");
     redirecionar("index.php","Erro ao incluir lista");
 }
 ?>
