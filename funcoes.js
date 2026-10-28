@@ -1,3 +1,11 @@
+function confirmaexcluir(destino,msg,codigo) {
+    if (window.confirm(msg)) {
+        redirecionar(destino+'\?codigo='+codigo);
+    }
+
+}
+
+
 function redirecionar(destino) { 
     window.location = destino;
 }
